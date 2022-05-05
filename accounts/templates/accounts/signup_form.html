@@ -1,0 +1,26 @@
+{% extends 'accounts/layout.html' %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <table>
+                    {% bootstrap_form form %}
+                </table>
+                {% buttons %}
+                    <button type="submit" class="btn btn-primary">
+                        {{ submit_label|default:'Submit'}}
+                    </button>
+                {% endbuttons %}     
+            </form>
+        </div>
+            
+    </div>
+
+</div>
+{% endblock  %}
+

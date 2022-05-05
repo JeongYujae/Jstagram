@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    'accounts',
+    'bootstrap4'
 ]
 
 MIDDLEWARE = [
@@ -93,7 +95,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+# User class를 사용하려면 꼭 정의해줘야함
+AUTH_USER_MODEL="accounts.User"
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
