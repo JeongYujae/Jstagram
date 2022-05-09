@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'accounts',
     'bootstrap4',
     'django_pydenticon',
+    'jstagram',
 ]
 
 MIDDLEWARE = [
