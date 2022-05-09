@@ -31,7 +31,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'accounts',
-    'bootstrap4'
+    'bootstrap4',
+    'django_pydenticon',
 ]
 
 MIDDLEWARE = [

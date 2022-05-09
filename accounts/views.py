@@ -1,8 +1,9 @@
 from django.shortcuts import redirect, render
-from .forms import SignupForm
+from .forms import ProfileForm, SignupForm
 from django.contrib import messages
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.views import LoginView, LogoutView, logout_then_login
+from django.contrib.auth.decorators import login_required
 
 
 login=LoginView.as_view(template_name='accounts/login_form.html')
@@ -28,3 +29,17 @@ def signup(request):
         'form':form,
     })
 
+
+@login_required
+def profile_edit(request):
+    if request.method=='POST':
+        form=ProfileForm(request.POST, request.FILES, instance=request.user)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Profile edited and saved succesfully!')
+            return redirect('profile_edit')
+    else:
+        form=ProfileForm(instance=request.user)
+    return render(request, "accounts/profile_edit_form.html",{
+        "form":form
+    })
