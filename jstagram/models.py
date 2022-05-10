@@ -22,6 +22,10 @@ class Post(models.Model):
             tag, _=Tag.objects.get_or_create(name=tag_name)
             tag_list.append(tag)
         return tag_list
+
+    def get_absolute_url(self):
+        return reverse("jstagram:post_detail", args=[self.pk])
+
         
 
 
