@@ -1,4 +1,4 @@
-{% extends 'layout.html' %}
+{% extends 'jstagram/layout.html' %}
 
 {% block content %}
     <div class="container">
@@ -7,6 +7,14 @@
                 Hi! Welcome to Jstagram
                 <hr/>
                 <a href='{% url "jstagram:post_new" %}' class="btn btn-primary">New Post<a/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 bg-success">
+                Timeline
+            </div>
+            <div class="col-sm-4 bg-info">
+                {% include "jstagram/timeline_sidebar.html" %}
             </div>
         </div>
     </div>

@@ -6,6 +6,12 @@ from .models import Tag, Post
 from django.contrib.auth import get_user_model
 
 @login_required
+def index(request):
+    return render(request, "jstagram/index.html",{
+        
+    })
+
+@login_required
 def post_new(request):
     if request.method=='POST':
         form=PostForm(request.POST, request.FILES)
