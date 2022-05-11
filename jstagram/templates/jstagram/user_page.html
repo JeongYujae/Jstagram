@@ -1,0 +1,28 @@
+{% extends 'jstagram/layout.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row pt-3 pb-3">
+        <div class="col-sm-3" stlye="text-align: center;">
+            <img src="{{page_user.avatar_url}}" class="rounded-circle" stlye="width:120px; height:120px;"/>
+        </div>
+        <div class="col-sm-9">
+            {{page_user.username}}
+            <a href="{% url 'profile_edit' %}" class="btn btn-secondary btn-sm">Edit Profile</a>
+            <hr/>
+            0 posts 0 followers 0 following
+            <hr/>
+            {{page_user.name}}
+        </div>
+        <div class="row" mt-3>
+        {% for post in post_list%}
+        <div class="col-sm-4">
+                <img src="{{post.photo.url}}" alt="{{post.caption}}" stlye="width:100%"/>
+        </div>
+        {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% endblock content %}

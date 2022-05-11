@@ -14,17 +14,16 @@ class User(AbstractUser):
     phone_number=models.CharField(validators=[RegexValidator(r"^010-?[1-9]\d{3}-?\d{4}$")], max_length=13)
     avatar=models.ImageField(blank=True, upload_to="accounts/avatar/%Y/%m/%d", help_text="48px * 48px png or jpg needed")
 
-
     @property
     def name(self):
         return f"{self.first_name} {self.last_name}"
-
+    
     @property
     def avatar_url(self):
         if self.avatar:
             return self.avatar.url
         else:
-            return resolve_url("pydenticon_image",self.username)
+            return resolve_url("pydenticon_image", self.username)
     # def send_welcome_email(self):
     #     subject= render_to_string("accounts/welcome_email_subject.txt",{
     #         "user":self

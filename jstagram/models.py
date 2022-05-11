@@ -13,7 +13,7 @@ class Post(models.Model):
         return self.caption
 
     def get_absolute_url(self):
-        return reverse("", kwargs={"pk": self.pk})
+        return reverse("jstagram:post_detail", kwargs={"pk": self.pk})
 
     def extract_tag_list(self): #caption에서 #뽑아내는 함수
         tag_name_list=re.findall(r"#([a-zA-Z\dㄱ-힣]+)",self.caption)  
