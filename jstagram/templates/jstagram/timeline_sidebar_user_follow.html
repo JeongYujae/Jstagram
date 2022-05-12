@@ -1,11 +1,12 @@
 <div class="d-flex mb-2">
     <div class="p-2">
-        <img src="{{friend_user.avatar_url}}" style="width: 32px; height:32px;" class="rounded-circle"/>
+        <img src="{{suggested_user.avatar_url}}" style="width: 32px; height:32px;" class="rounded-circle"/>
     </div>
     <div class="p-2">   
-        {{friend_user.username}}    
+        {{suggested_user.username}}    
     </div>
     <div class="ml-auto">
-        <button href="#">Follow</button>
+        <a href='{% url "user_follow" suggested_user.username %}' >Follow</a>
+        <a href='{% url "user_unfollow" suggested_user.username %}' >Unfollow</a>
     </div>
 </div>

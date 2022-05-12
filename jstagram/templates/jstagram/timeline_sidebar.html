@@ -28,10 +28,11 @@
         Suggestion
     </div>
     <div class="card-body text-muted">
-        {% include "jstagram/timeline_sidebar_user_follow.html" with friend_user=user %}
-        {% include "jstagram/timeline_sidebar_user_follow.html" with friend_user=user %}
-        {% include "jstagram/timeline_sidebar_user_follow.html" with friend_user=user %}
-        {% include "jstagram/timeline_sidebar_user_follow.html" with friend_user=user %}
+        {% for suggested_user in suggested_user_list %}
+            {% include "jstagram/timeline_sidebar_user_follow.html" %}
+        {% empty %}
+            No User suggested :(
+        {% endfor %}
    </div>
 
 </div>
