@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="container">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-sm-12">
                 Hi! Welcome to Jstagram
                 <hr/>
@@ -11,9 +11,11 @@
         </div>
         <div class="row">
             <div class="col-sm-8 bg-success">
-                Timeline
-                <hr/>
-                {{user.following_set.all}}
+                {% for post in post_list %}
+                    <div class="mb-3">
+                    {% include "jstagram/_post_card.html" %}
+                    </div>
+                {% endfor %}
             </div>
             <div class="col-sm-4 bg-info">
                 {% include "jstagram/timeline_sidebar.html" %}
