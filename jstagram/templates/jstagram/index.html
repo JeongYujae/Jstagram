@@ -15,6 +15,8 @@
                     <div class="mb-3">
                     {% include "jstagram/_post_card.html" %}
                     </div>
+                {% empty %}
+                    No posting
                 {% endfor %}
             </div>
             <div class="col-sm-4 bg-info">
