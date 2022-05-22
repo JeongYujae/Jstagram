@@ -10,7 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
     path('', login_required(RedirectView.as_view(pattern_name='jstagram:index')), name='root'),
-    path(r'^identicon/image/<path:data>/', pydenticon_image, name='pydenticon_image'),
+    path('identicon/image/<path:data>/', pydenticon_image,name='pydenticon_image'),
     path('jstagram/', include('jstagram.urls')),
 ]
 

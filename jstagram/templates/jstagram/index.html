@@ -10,16 +10,16 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8 bg-success">
+            <div class="col-sm-8">
                 {% for post in post_list %}
                     <div class="mb-3">
-                    {% include "jstagram/_post_card.html" %}
+                        {% include "jstagram/_post_card.html" %}
                     </div>
                 {% empty %}
                     No posting
                 {% endfor %}
             </div>
-            <div class="col-sm-4 bg-info">
+            <div class="col-sm-4">
                 {% include "jstagram/timeline_sidebar.html" %}
             </div>
         </div>

@@ -13,3 +13,7 @@ class CommentForm(forms.ModelForm):
     class Meta:
         model=Comment
         fields=['message']
+        widgets={
+            "message":forms.Textarea(attrs={"rows":2}),
+        }
+        #위젯 -> 칸 크기를 임의로 지정
