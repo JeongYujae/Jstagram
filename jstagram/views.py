@@ -113,7 +113,7 @@ def comment_new(request, post_pk):
 def user_page(request, username):
     page_user=get_object_or_404(get_user_model(),username=username, is_active=True)
     post_list=Post.objects.filter(author=page_user)
-    post_list_count=post_list.count() # 실제 db에 count 쿼리 전송
+    post_list_count=post_list.count() # 실제 db에 count 쿼리 전송   
 
     if request.user.is_authenticated:
         is_follow=request.user.following_set.filter(pk=page_user.pk).exists()
