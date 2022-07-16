@@ -25,3 +25,11 @@ pip install django~=3.0.0
 
 
 <img src="https://user-images.githubusercontent.com/96777346/174230737-f15ed2b5-a050-49a3-a22a-88498fb24762.PNG">
+
+<img src="https://user-images.githubusercontent.com/96777346/179358057-691d0756-54b6-46c0-adc5-3c7efe5c3ef0.PNG">
+
+<img src="https://user-images.githubusercontent.com/96777346/179358062-b0b46ddd-6604-422e-bc32-dfe75ef7926d.PNG">
+
+<img src="https://user-images.githubusercontent.com/96777346/179358061-9beac661-cd30-4b09-9bf9-297376b1811b.PNG">
+
+<img src="https://user-images.githubusercontent.com/96777346/179358063-5086d5d5-726b-4b25-9fc0-d982ac63537a.PNG">
