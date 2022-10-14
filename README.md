@@ -15,13 +15,15 @@ pip install django~=3.0.0
 
 ## Example
 
-<img src="https://user-images.githubusercontent.com/96777346/174230813-9f7d749d-a280-4d72-a8c8-84ee0d0727b1.PNG">
+#Main Page
 
+<img src="https://user-images.githubusercontent.com/96777346/195827158-c7852352-e1f5-4121-a80a-5e8f0f8c6109.PNG">
 
-<img src="https://user-images.githubusercontent.com/96777346/174230746-b49d0f6f-a50f-47a4-9c03-a4d99c4105b6.PNG">
+#Signup Page
+<img src="https://user-images.githubusercontent.com/96777346/195827167-b0f017aa-428c-4fb9-b4b3-3c23be5cc8a4.PNG">
 
-
-<img src="https://user-images.githubusercontent.com/96777346/174230754-28052f95-d7f7-468a-b98c-a484282a25f9.PNG">
+#Profile Page
+<img src="https://user-images.githubusercontent.com/96777346/195827169-2cd37927-58b8-4b24-a913-bd413aafb8a9.PNG">
 
 
 <img src="https://user-images.githubusercontent.com/96777346/174230737-f15ed2b5-a050-49a3-a22a-88498fb24762.PNG">
