@@ -1,17 +1,16 @@
 # Introduction
 
-Django + React to make Instagram(Plus My name J, Jstagram)
+Website inspired a lot from Instragram
 
 ## Getting started
 
-In the reuqirements folde, it has common , dev, and prod.
+100% built with Django
 
-Can use up to your purpose.
+In the reuqirements folder, it contains common , dev, and prod and can use up to your purpose.
 
 Main django ver.
 
 pip install django~=3.0.0
-
 
 ## Example
 
